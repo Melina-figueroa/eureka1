@@ -9,7 +9,7 @@ let num1: number = Number(prompt("Ingrese Primer valor."));
 let num2: number = Number(prompt("Ingrese segundo valor."));
 let opcion: number = Number(
   prompt(
-    "Ingrese 1(suma), Ingrese 2 (resta), Ingrese 3 (dividir), Ingrese 4 (multiplicar)"
+    "Para SUMAR ingrese [1], Para RESTAR ingrese [2], Para MULTIPLICAR ingrese [3], Para DIVIDIR ingrese [4], Para FINALIZAR ingrese cualquier tecla."
   )
 );
 let resultado: number = 0;

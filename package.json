@@ -1,7 +1,7 @@
 {
-  "name": "clase-de-los-viernes",
+  "name": "clase-de-los-martes",
   "version": "1.0.0",
-  "description": "",
+  "description": "ejercicios de los martes",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",

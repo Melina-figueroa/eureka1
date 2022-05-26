@@ -1,18 +1,13 @@
-let numAlum: number[] = [0];
+let numAlum: number[] = Number(prompt("Ingrese cantidad de alumnos: "));
 let vAlumnos: string[] = new Array(numAlum); //nombres de alumnos
-let vCantidad: number[] = new Array(numAlum);//guarda cantidad alumnos a cargar
 let vNota1: number[] = new Array(numAlum);
 let vNota2: number[] = new Array(numAlum);
 let vNota3: number[] = new Array(numAlum);
-let Vnotas_total: number = [vNota1,vNota2,vNota3];
+let Vnotas_total: number[] = new Array(vNota1, vNota2, vNota3);
 let vPromedio: number[] = new Array(Vnotas_total);
 
 function cargar_cantidadAlumnos(): void {
-
-  for (let i: number = 0; i < vCantidad.length; i++) {
-    vCantidad[i] = Number(prompt("Ingrese cantidad de alumnos: "));
-  }
-  for (let i: number = 0; i < numAlum.length; i++) {
+  for (let i: number = 0; i < numAlum; i++) {
     vAlumnos[i] = prompt("Nombre y apellido: ");
     vNota1[i] = Number(prompt("Nota 1er trimestre:"));
     vNota2[i] = Number(prompt("Nota 2do trimestre:"));
@@ -22,7 +17,6 @@ function cargar_cantidadAlumnos(): void {
     console.log(
       "Alumno/a:",
       vAlumnos[i],
-
       "Nota primer trimestre ",
       +vNota1[i],
       "Nota segundo trimestre ",

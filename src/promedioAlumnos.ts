@@ -3,7 +3,7 @@ let vAlumnos: string[] = new Array(numAlum); //nombres de alumnos
 let vNota1: number[] = new Array(numAlum);
 let vNota2: number[] = new Array(numAlum);
 let vNota3: number[] = new Array(numAlum);
-let Vnotas_total: number[] = new Array(vNota1, vNota2, vNota3);
+let Vnotas_total: number[] = new Array(numAlum);
 let vPromedio: number[] = new Array(Vnotas_total);
 
 function cargar_cantidadAlumnos(): void {

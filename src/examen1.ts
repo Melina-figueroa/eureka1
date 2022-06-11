@@ -1,10 +1,14 @@
-let vendedorNombre: string = prompt("Ingrese vendedor a consultar ");
-let nombresVendedores: number[] = (vendedorNombre);
-let mes: number[] = [30];
+let nombresVendedores: number[] = "camila, franco, sofia, matias, agustina";
+let consultarVendedor: string = prompt("Ingrese vendedor a consultar ");
+let arregloNombres: number[] = nombresVendedores;
+/*let mes: number[] = [30];
 let semana: number[] = [4];
 let trimestre: number[] = [3];
-let ventasAnual: number[] = (nombresVendedores);
-let ventaMaxima: number[] = (nombresVendedores);
+*/
+let ventasAnual: number[] = nombresVendedores;
+let ventaMaxima: number[] = arregloNombres;
+let ventaMinima: number[] = arregloNombres;
+
 let camila: number[] = [
   32558,
   36165,
@@ -76,15 +80,16 @@ let agustina: number[] = [
   20562
 ];
 
-//if(vendedorNombre === nombresVendedores[]){
 for (let i: number = 0; i < nombresVendedores.length; i++) {
-  vendedorNombre = ("camila, franco, sofia, matias, agustina");
-  for (let i: number = 0; i < nombresVendedores.length; i++) {
-    if(i<nombresVendedores[i])
-      
+  for (let i: number = 0; i < consultarVendedor.length; i++) {
+    for (let i: number = 0; i < ventaMinima.length; i++) {
+      ventaMinima = ventaMinima[i];
+    }
+  }
 }
-ventaMaxima[i];
-}
+
+console.log(consultarVendedor, "venta minima es: ", ventaMinima[i]);
+
 //}
 
 /*Dados estos 5 arreglos que representan las ventas 

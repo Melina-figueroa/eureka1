@@ -28,7 +28,25 @@ function cargar_cantidadAlumnos(): void {
     );
   }
 }
+function bucar_alumnos():void{
+let buscarAlumno: string = prompt("Indique Alumno a buscar");
+let alumnoCargado: boolean= false;
+let promedio:number=0;
+while(let i:number=0;i<numAlum && !alumnoCargado){
+  if (vAlumnos[i]=== buscarAlumno){
+    alumnoCargado= true;
+    promedio= vNota1[i] + vNota2[i] + vNota3[i];
+    promedio /=3;
+  }
+  i++;
+}
+if (alumnoCargado){
+  console.log("La nota de promedio es" + alumnoCargado + "es: " + promedio);
+}
+console.log("No se encontro a: " + alumnoCargado);
+}
 cargar_cantidadAlumnos();
+buscarAlumno();
 
 //Desarrolle un algoritmo que permita cargar alumnos y sus notas en los tres trimestres
 //Se debe permitir obtener el promedio anual (es decir, de sus tres notas) de un alumno (ingresado por el usuario)

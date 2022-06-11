@@ -1,14 +1,3 @@
-let nombresVendedores: number[] = "camila, franco, sofia, matias, agustina";
-let consultarVendedor: string = prompt("Ingrese vendedor a consultar ");
-let arregloNombres: number[] = nombresVendedores;
-/*let mes: number[] = [30];
-let semana: number[] = [4];
-let trimestre: number[] = [3];
-*/
-let ventasAnual: number[] = nombresVendedores;
-let ventaMaxima: number[] = arregloNombres;
-let ventaMinima: number[] = arregloNombres;
-
 let camila: number[] = [
   32558,
   36165,
@@ -79,12 +68,38 @@ let agustina: number[] = [
   38842,
   20562
 ];
+let consultarVendedor: string = prompt("Ingrese vendedor a consultar ");
+let nombresVendedores: number[] = new Array(consultarVendedor);
+let arregloNombre: string[] = new Array(5);
+arregloNombre[32558,
+  36165,
+  34240,
+  39273,
+  34360,
+  21347,
+  20869,
+  21493,
+  23062,
+  31908,
+  30369,
+  30652] = "camila";
+arregloNombre[1] = "franco";
+arregloNombre[2] = "sofia";
+arregloNombre[3] = "matias";
+arregloNombre[4] = "agustina";
 
-for (let i: number = 0; i < nombresVendedores.length; i++) {
-  for (let i: number = 0; i < consultarVendedor.length; i++) {
+let ventasAnual: number[] = nombresVendedores;
+let ventaMaxima: number[] = new Array(nombresVendedores);
+let ventaMinima: number[] = new Array(nombresVendedores);
+
+
+for (let i: number = 0; i < arregloNombre.length; i++) {
+  if(consultarVendedor===arregloNombre){
+  for (let i: number = 0; i < nombresVendedores.length; i++) {
+  }if(0<nombresVendedores[i])
     for (let i: number = 0; i < ventaMinima.length; i++) {
-      ventaMinima = ventaMinima[i];
-    }
+      ventaMinima[i];
+    
   }
 }
 

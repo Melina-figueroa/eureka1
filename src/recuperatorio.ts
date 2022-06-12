@@ -19,24 +19,32 @@ moto 0km
 • si compra mas de 1000 pero menos de 2000 participa 
 un tv led */
 
-let cantidadProductos: number = Number(
-  prompt("Ingrese Cantidad de Productos a llevar ")
-);
-let arregloDimProduc: number[] = cantidadProductos; //arreglo para guardar dimesion
-let cantidadProductos: number[]; // cantidad numerica de productos a llevar
-let productos: string; // productos a ingresar (HARINA, LECHE, HUEVOS)
-let arregloProducto: string[] = productos; //se va a guardar los datos de (harina, leche, huevos)
-let precioProducto: number; //precio unitario
-let arregloPrecio: number[] = precioProducto;
-let total: number[] = arregloPrecio;
+let long: number = Number(prompt("Ingrese Cantidad de Productos a llevar "));
+let arrLong: number[] =  [long]; //arreglo para guardar dimesion
+//let cantidadProductos: number; // cantidad numerica de productos a llevar
+//let arregloCantProd: number[] = cantidadProductos;
+let productos: number = 0; //ingreso de productos (HARINA, AZUCAR, LECHE)
+; // productos a ingresar (HARINA, LECHE, HUEVOS)
+let arregloProducto: number[] =  [productos]; //se va a guardar los datos de (harina, leche, huevos)
+let precioProducto: number = 0; //precio unitario
+let arregloPrecio: number[] = [precioProducto];
+//let total: number[] = arregloPrecio;
 
 function cargarDatos(): void {
-  for (let i: number = 0; i < arregloDimProduc.length; i++) {
-    productos = prompt("Ingrese Productos "); //ingreso de productos (HARINA, AZUCAR, LECHE)
+
+  for (let i: number = 0; i < arrLong.length; i++) {
+  arrLong[i]=long;
   }
-  for (let i: number = 0; i < arregloProducto.length; i++)
-    precioProducto = Number(prompt("Ingrese Precio de ", productos));
-}
+
+  for (let i: number = 0; i < arrLong.length;i++){
+productos = arregloProducto[i]
+arregloProducto[i]= Number(prompt("Ingrese Productos "));
+  }
+  
+  for (let i: number = 0; i < arrLong.length; i++){
+    precioProducto = arregloPrecio[i]; 
+    arregloPrecio[i] = Number(prompt("Ingrese Precio de ", +arregloProducto[i]);
+
 for (let i: number = 0; 0 < productos.length; i++) {
   cantidadProductos = Number(prompt("Ingrese cantidad a llevar de", productos));
 }
